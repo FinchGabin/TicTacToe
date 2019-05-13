@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
-public class MainActivity extends AppCompatActivity {
+public class Main3Activity extends AppCompatActivity {
 
     Button b1, b2, b3, b4, b5, b6, b7, b8, b9;
 
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main3);
 
         b1 = (Button) findViewById(R.id.b001);
         b2 = (Button) findViewById(R.id.b002);
@@ -214,96 +214,98 @@ public class MainActivity extends AppCompatActivity {
         i=b9.getText().toString();
 
         if (a.equals("X") && b.equals("X") && c.equals("X")){
-            Toast.makeText(MainActivity.this, "winner player X", Toast.LENGTH_LONG).show();
-            end = true;
+            Toast.makeText(Main3Activity.this, "winner player X", Toast.LENGTH_LONG).show();
 
+            end = true;
+pointsPlayer1=pointsPlayer1+1;
 
         }
         if (a.equals("X") && e.equals("X") && i.equals("X")){
-            Toast.makeText(MainActivity.this, "winner player X", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player X", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer1=pointsPlayer1+1;
         }
         if (a.equals("X") && d.equals("X") && g.equals("X")){
-            Toast.makeText(MainActivity.this, "winner player X", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player X", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer1=pointsPlayer1+1;
         }
         if (b.equals("X") && e.equals("X") && h.equals("X")){
-            Toast.makeText(MainActivity.this, "winner player X", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player X", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer1=pointsPlayer1+1;
         }
         if (c.equals("X") && f.equals("X") && i.equals("X")){
-            Toast.makeText(MainActivity.this, "winner player X", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player X", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer1=pointsPlayer1+1;
         }
         if (d.equals("X") && e.equals("X") && f.equals("X")){
-            Toast.makeText(MainActivity.this, "winner player X", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player X", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer1=pointsPlayer1+1;
 
         }
         if (g.equals("X") && h.equals("X") && i.equals("X")){
-            Toast.makeText(MainActivity.this, "winner player X", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player X", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer1=pointsPlayer1+1;
 
         }
         if (g.equals("X") && e.equals("X") && c.equals("X")){
-            Toast.makeText(MainActivity.this, "winner player X", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player X", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer1=pointsPlayer1+1;
 
         }
 
         if (a.equals("O") && b.equals("O") && c.equals("O")){
-            Toast.makeText(MainActivity.this, "winner player O", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player O", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer2=pointsPlayer2+1;
         }
         if (a.equals("O") && e.equals("O") && i.equals("O")){
-            Toast.makeText(MainActivity.this, "winner player O", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player O", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer2=pointsPlayer2+1;
 
         }
         if (a.equals("O") && d.equals("O") && g.equals("O")){
-            Toast.makeText(MainActivity.this, "winner player O", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player O", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer2=pointsPlayer2+1;
 
         }
         if (b.equals("O") && e.equals("O") && h.equals("O")){
-            Toast.makeText(MainActivity.this, "winner player O", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player O", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer2=pointsPlayer2+1;
 
 
         }
         if (c.equals("O") && f.equals("O") && i.equals("O")){
-            Toast.makeText(MainActivity.this, "winner player O", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player O", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer2=pointsPlayer2+1;
 
         }
         if (d.equals("O") && e.equals("O") && f.equals("O")){
-            Toast.makeText(MainActivity.this, "winner player O", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player O", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer2=pointsPlayer2+1;
 
 
         }
         if (g.equals("O") && h.equals("O") && i.equals("O")){
-            Toast.makeText(MainActivity.this, "winner player O", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player O", Toast.LENGTH_LONG).show();
             end = true;
+            pointsPlayer2=pointsPlayer2+1;
         }
 
         if (g.equals("O") && e.equals("O") && c.equals("O")){
-            Toast.makeText(MainActivity.this, "winner player O", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity.this, "winner player O", Toast.LENGTH_LONG).show();
             end = true;
-
+            pointsPlayer2=pointsPlayer2+1;
         }
 
         if (end) {
